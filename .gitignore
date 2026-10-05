@@ -1,0 +1,19 @@
+node_modules
+dist
+dist-ssr
+.tmp
+*.log
+*.tsbuildinfo
+.DS_Store
+
+# Local secrets only — never commit real Firebase keys.
+# Add the VITE_FIREBASE_* values as Environment Variables in the Vercel dashboard.
+.env
+.env.local
+.env.*.local
+
+# Vercel CLI metadata
+.vercel
+
+# Test artefacts
+screenshots

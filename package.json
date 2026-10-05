@@ -1,0 +1,36 @@
+{
+  "name": "ielts-ai-coach",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "test": "esbuild scripts/engine.test.ts --bundle --platform=node --format=cjs --outfile=.tmp/engine.cjs --log-level=error --define:import.meta.env='{\"VITE_FIREBASE_API_KEY\":undefined,\"VITE_FIREBASE_AUTH_DOMAIN\":undefined,\"VITE_FIREBASE_PROJECT_ID\":undefined,\"VITE_FIREBASE_STORAGE_BUCKET\":undefined,\"VITE_FIREBASE_MESSAGING_SENDER_ID\":undefined,\"VITE_FIREBASE_APP_ID\":undefined}' && node .tmp/engine.cjs",
+    "test:ui": "node scripts/ui.test.cjs",
+    "preview": "vite preview",
+    "typecheck": "tsc -b --noEmit false --emitDeclarationOnly false"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "date-fns": "^3.6.0",
+    "firebase": "^10.13.2",
+    "framer-motion": "^11.5.4",
+    "lucide-react": "^0.441.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.2",
+    "recharts": "^2.12.7"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.10",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "puppeteer-core": "^23.6.0",
+    "tailwindcss": "^3.4.13",
+    "typescript": "^5.6.2",
+    "vite": "^5.4.8"
+  }
+}
