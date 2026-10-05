@@ -60,16 +60,22 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   }, []);
 
   const friendly = (e: unknown) => {
-    const code = (e as { code?: string })?.code ?? '';
+    const code = (e as { code?: string })?.code;
     const mapErr: Record<string, string> = {
       'auth/invalid-credential': 'That email and password combination is incorrect.',
       'auth/email-already-in-use': 'An account already exists with this email.',
       'auth/weak-password': 'Choose a password of at least 6 characters.',
       'auth/popup-closed-by-user': 'The Google sign-in window was closed before finishing.',
+      'auth/popup-blocked': 'Your browser blocked the sign-in popup. Allow popups for this site and try again.',
+      'auth/unauthorized-domain': 'This domain is not authorised for sign-in. Add it under Firebase → Authentication → Settings → Authorised domains.',
+      'auth/operation-not-allowed': 'This sign-in method is disabled. Enable it under Firebase → Authentication → Sign-in method.',
       'auth/too-many-requests': 'Too many attempts. Please wait a moment and try again.',
       'auth/network-request-failed': 'Network error — check your connection and try again.',
+      'auth/configuration-not-found': 'Firebase Authentication is not set up for this project.',
     };
-    return mapErr[code] ?? 'Something went wrong while signing in. Please try again.';
+    // Preserve our own explicit messages (e.g. "Firebase is not configured").
+    if (!code && e instanceof Error && e.message) return e.message;
+    return mapErr[code ?? ''] ?? 'Something went wrong while signing in. Please try again.';
   };
 
   const guard = useCallback(async (fn: () => Promise<void>) => {
