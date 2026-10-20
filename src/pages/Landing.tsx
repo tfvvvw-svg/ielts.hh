@@ -19,7 +19,7 @@ const FEATURES = [
 ];
 
 const STEPS = [
-  { n: '01', title: 'Upload your material', body: 'Paste text, drop in images, or import a PDF. Bandit reads it and indexes every sentence.' },
+  { n: '01', title: 'Upload your material', body: 'Paste text, drop in images, or import a PDF. IELTS HH reads it and indexes every sentence.' },
   { n: '02', title: 'Generate a real test', body: 'Choose question types and difficulty. Questions come only from your source, each with its evidence.' },
   { n: '03', title: 'Learn from every miss', body: 'Wrong answers land in your Mistake Bank, update your skill map and shape tomorrow\u2019s plan.' },
 ];
@@ -59,7 +59,7 @@ export default function Landing() {
               <Sparkles className="h-4 w-4 text-white" strokeWidth={2.5} />
             </div>
             <div className="leading-tight">
-              <p className="font-display text-base font-bold">Bandit</p>
+              <p className="font-display text-base font-bold">IELTS HH</p>
               <p className="text-[10px] font-medium uppercase tracking-[0.16em] text-muted">AI IELTS Coach</p>
             </div>
           </div>
@@ -97,7 +97,7 @@ export default function Landing() {
 
               <motion.p initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.12 }}
                 className="mt-5 max-w-xl text-base leading-relaxed text-muted sm:text-lg">
-                Bandit learns your level, tracks every mistake, finds your weak question types and plans your week —
+                IELTS HH learns your level, tracks every mistake, finds your weak question types and plans your week —
                 then tells you exactly what to do next, every single day.
               </motion.p>
 
@@ -234,7 +234,7 @@ export default function Landing() {
         <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 sm:px-6 lg:grid-cols-2">
           <Reveal>
             <h2 className="font-display text-3xl font-bold tracking-tight sm:text-4xl">Start your personalised plan in under a minute</h2>
-            <p className="mt-3 max-w-md text-muted">Set your exam date and target band — Bandit builds the rest, and keeps rebuilding it as your performance changes.</p>
+            <p className="mt-3 max-w-md text-muted">Set your exam date and target band — IELTS HH builds the rest, and keeps rebuilding it as your performance changes.</p>
             <ul className="mt-7 space-y-3">
               {['Questions grounded in your own materials, never invented', 'Every mistake tracked and drilled automatically', 'Exam readiness estimated from your real recent performance', 'Works fully offline — your data stays on your device by default'].map((t) => (
                 <li key={t} className="flex items-start gap-3 text-sm">
@@ -284,7 +284,7 @@ export default function Landing() {
 
               <Button variant="ghost" full className="mt-3" onClick={continueAsGuest}>Continue without an account</Button>
               <p className="mt-4 text-center text-[11px] leading-relaxed text-muted">
-                By continuing you agree that Bandit may store your study data to generate your plan. AI scores are estimates for practice only.
+                By continuing you agree that IELTS HH may store your study data to generate your plan. AI scores are estimates for practice only.
               </p>
             </div>
           </Reveal>
@@ -295,10 +295,10 @@ export default function Landing() {
         <div className="mx-auto flex max-w-6xl flex-col items-center gap-4 px-4 text-center sm:px-6">
           <div className="flex items-center gap-2">
             <div className="grid h-7 w-7 place-items-center rounded-lg bg-gradient-to-br from-brand-400 to-brand-600"><Sparkles className="h-3.5 w-3.5 text-white" /></div>
-            <span className="font-display text-sm font-bold">Bandit</span>
+            <span className="font-display text-sm font-bold">IELTS HH</span>
           </div>
           <p className="max-w-2xl text-xs leading-relaxed text-muted">
-            Bandit provides educational practice tools. Band scores are AI estimates based on your own practice data and do not represent official IELTS results.
+            IELTS HH provides educational practice tools. Band scores are AI estimates based on your own practice data and do not represent official IELTS results.
             Always confirm your readiness with an official practice test.
           </p>
           <div className="flex items-center gap-1 text-amber2-500" aria-label="Five star rating placeholder">

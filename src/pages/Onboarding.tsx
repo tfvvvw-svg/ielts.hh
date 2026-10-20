@@ -48,7 +48,7 @@ export default function Onboarding() {
       <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="relative w-full max-w-2xl">
         <div className="mb-6 flex items-center justify-center gap-2.5">
           <div className="grid h-10 w-10 place-items-center rounded-xl bg-gradient-to-br from-brand-400 to-brand-600 shadow-glow"><Sparkles className="h-5 w-5 text-white" /></div>
-          <p className="font-display text-lg font-bold">Bandit</p>
+          <p className="font-display text-lg font-bold">IELTS HH</p>
         </div>
         <Card className="p-6 sm:p-8">
           <div className="mb-6 flex items-center gap-2">
@@ -58,7 +58,7 @@ export default function Onboarding() {
           {step === 0 && (
             <div className="space-y-5">
               <h1 className="font-display text-2xl font-bold tracking-tight">Let’s set up your IELTS plan</h1>
-              <p className="text-sm text-muted">Three quick questions. Bandit uses these to weight every session it schedules for you.</p>
+              <p className="text-sm text-muted">Three quick questions. IELTS HH uses these to weight every session it schedules for you.</p>
               <Field label="Your name" htmlFor="onboard-name">
                 <Input id="onboard-name" value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} placeholder="How should we address you?" />
               </Field>
@@ -103,7 +103,7 @@ export default function Onboarding() {
               </div>
               <div className="rounded-xl bg-brand-soft p-4">
                 <p className="flex items-center gap-2 text-sm font-semibold text-brand"><Target className="h-4 w-4" />{form.studyDays.length * form.dailyMinutes} minutes per week</p>
-                <p className="mt-1 text-xs text-muted">Bandit schedules {form.studyDays.length} sessions a week, weighted toward the skills furthest from Band {form.targetBand}.</p>
+                <p className="mt-1 text-xs text-muted">IELTS HH schedules {form.studyDays.length} sessions a week, weighted toward the skills furthest from Band {form.targetBand}.</p>
               </div>
             </div>
           )}

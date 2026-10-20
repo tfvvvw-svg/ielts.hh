@@ -51,7 +51,7 @@ function Logo({ compact = false }: { compact?: boolean }) {
       </div>
       {!compact && (
         <div className="leading-tight">
-          <p className="font-display text-base font-bold tracking-tight">Bandit</p>
+          <p className="font-display text-base font-bold tracking-tight">IELTS HH</p>
           <p className="text-[10px] font-medium uppercase tracking-[0.16em] text-muted">AI IELTS Coach</p>
         </div>
       )}

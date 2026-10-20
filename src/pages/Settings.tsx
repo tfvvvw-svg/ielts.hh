@@ -25,7 +25,7 @@ export default function Settings() {
 
   return (
     <div className="max-w-3xl space-y-6">
-      <PageHeader icon={SettingsIcon} title="Settings" subtitle="Everything here changes how Bandit plans and adapts your preparation." />
+      <PageHeader icon={SettingsIcon} title="Settings" subtitle="Everything here changes how IELTS HH plans and adapts your preparation." />
       {notice && <div role="status" className="rounded-xl bg-brand-soft px-4 py-3 text-sm text-brand">{notice}</div>}
 
       <Card className="space-y-4 p-5">
@@ -105,7 +105,7 @@ export default function Settings() {
       <Card className="space-y-4 p-5">
         <SectionTitle title="Your data" subtitle="Export or clear everything stored on this device" />
         <div className="flex flex-wrap gap-2">
-          <Button variant="outline" icon={Download} onClick={() => download(`bandit-data-${todayISO()}.json`, exportData(), 'application/json')}>
+          <Button variant="outline" icon={Download} onClick={() => download(`ielts-hh-data-${todayISO()}.json`, exportData(), 'application/json')}>
             Export my data
           </Button>
           <Button variant="outline" icon={RotateCcw} onClick={() => { flash('Alerts and achievements recalculated.'); }}>

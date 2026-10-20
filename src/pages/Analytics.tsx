@@ -52,7 +52,7 @@ export default function Analytics() {
       <div className="space-y-6">
         <PageHeader icon={BarChart3} title="Analytics" subtitle="Every chart answers a real question about your preparation." />
         <EmptyState icon={BarChart3} title="No data yet"
-          body="Take a test, write an essay or run a speaking session. Bandit turns your practice into a clear picture of where you stand."
+          body="Take a test, write an essay or run a speaking session. IELTS HH turns your practice into a clear picture of where you stand."
           action={<Button size="sm" icon={Sparkles} onClick={() => navigate('/test-generator')}>Generate your first test</Button>} />
       </div>
     );

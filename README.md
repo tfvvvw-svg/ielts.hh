@@ -1,6 +1,6 @@
-# Bandit — AI IELTS Coach
+# IELTS HH — AI IELTS Coach
 
-A production-quality, AI-powered IELTS learning platform. Bandit manages your learning system:
+A production-quality, AI-powered IELTS learning platform. IELTS HH manages your learning system:
 it tracks every result, detects repeated mistakes, maps your weak question types, builds and
 re-plans your study schedule, and tells you the single most useful thing to do next.
 

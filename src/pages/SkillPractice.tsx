@@ -39,7 +39,7 @@ export default function SkillPractice({ skill }: { skill: ISkill }) {
           <SectionTitle title="Skill map" subtitle="Accuracy for each question type you have attempted" />
           {byType.length === 0 ? (
             <EmptyState icon={Icon} title="No data for this skill yet"
-              body="Take a practice test and Bandit will map every question type you get right and wrong."
+              body="Take a practice test and IELTS HH will map every question type you get right and wrong."
               action={<Button size="sm" onClick={() => navigate('/test-generator')}>Generate my first test</Button>} />
           ) : (
             <ul className="space-y-3.5">
@@ -86,7 +86,7 @@ export default function SkillPractice({ skill }: { skill: ISkill }) {
         <SectionTitle title="How to improve this skill" subtitle="Advice generated from your own results" />
         <div className="grid gap-4 sm:grid-cols-3">
           {[
-            { title: 'Target your weakest type', body: weak ? `You score ${weak.percentage}% on ${typeLabel(weak.type)}. A focused set on this single type is the cheapest gain available.` : 'Take a test and Bandit will identify the exact question type costing you marks.' },
+            { title: 'Target your weakest type', body: weak ? `You score ${weak.percentage}% on ${typeLabel(weak.type)}. A focused set on this single type is the cheapest gain available.` : 'Take a test and IELTS HH will identify the exact question type costing you marks.' },
             { title: 'Work under time pressure', body: 'Real IELTS questions are timed. Use timed mode so speed becomes automatic before exam day.' },
             { title: 'Review every mistake', body: 'Each wrong answer lands in your Mistake Bank with the source sentence, so a repeat costs you nothing.' },
           ].map((t) => (

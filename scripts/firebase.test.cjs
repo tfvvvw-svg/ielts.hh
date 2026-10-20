@@ -38,7 +38,7 @@ const check = (name, cond, detail = '') => {
   console.log('\nEmail sign-up with a real Firebase project');
   await page.evaluate(() => [...document.querySelectorAll('button')].find((b) => b.textContent.trim() === 'Create account')?.click());
   await page.waitForSelector('#name');
-  const email = `bandit.qa.${Date.now()}@example.com`;
+  const email = `ielts-hh.qa.${Date.now()}@example.com`;
   const password = 'QaPassword123!';
   await page.evaluate((n, e, pw) => {
     const set = (sel, v) => {

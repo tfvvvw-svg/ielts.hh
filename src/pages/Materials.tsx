@@ -56,7 +56,7 @@ return (
 
       {db.materials.length === 0 ? (
         <EmptyState icon={Library} title="No materials yet"
-          body="Add your first passage. Bandit will summarise it, extract vocabulary, spot grammar issues and generate grounded tests from it."
+          body="Add your first passage. IELTS HH will summarise it, extract vocabulary, spot grammar issues and generate grounded tests from it."
           action={<Button size="sm" onClick={() => setOpen(true)}>Add material</Button>} />
       ) : (
         <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">

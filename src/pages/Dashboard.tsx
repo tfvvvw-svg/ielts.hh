@@ -91,7 +91,7 @@ export default function Dashboard() {
             </div>
             <h2 className="font-display text-xl font-bold tracking-tight sm:text-2xl">What should I study now?</h2>
             <p className="mt-1.5 max-w-2xl text-sm text-muted">
-              Bandit analyses your recent results, mistakes, weak skills, study history, available time and exam date, then recommends one activity.
+              IELTS HH analyses your recent results, mistakes, weak skills, study history, available time and exam date, then recommends one activity.
             </p>
 
             <div className="mt-5 flex flex-wrap items-center gap-2">
@@ -225,7 +225,7 @@ export default function Dashboard() {
           <SectionTitle title="Recent test results" action={<Button size="sm" variant="ghost" onClick={() => navigate('/analytics')}>Analytics</Button>} />
           {recentResults.length === 0 ? (
             <EmptyState icon={Zap} title="No tests yet"
-              body="Generate your first practice test and Bandit will start estimating your band and finding your weak spots."
+              body="Generate your first practice test and IELTS HH will start estimating your band and finding your weak spots."
               action={<Button size="sm" onClick={() => navigate('/test-generator')}>Generate a test</Button>} />
           ) : (
             <ul className="space-y-2.5">

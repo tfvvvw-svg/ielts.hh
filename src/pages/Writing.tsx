@@ -38,7 +38,7 @@ export default function Writing() {
   return (
     <div className="space-y-6">
       <PageHeader icon={FileText} title="Writing Lab"
-        subtitle="Write or paste an essay. Bandit scores all four IELTS criteria and shows exactly which sentences hold you back." />
+        subtitle="Write or paste an essay. IELTS HH scores all four IELTS criteria and shows exactly which sentences hold you back." />
 
       <div className="grid gap-6 lg:grid-cols-[1.05fr_.95fr]">
         <div className="space-y-6">
@@ -105,7 +105,7 @@ function AnalysisPanel({ essay, live }: { essay: Essay | null; live: ReturnType<
     return (
       <Card className="p-5">
         <SectionTitle title="Live analysis" subtitle="Appears as you type, once there is enough to score" />
-        <EmptyState icon={Wand2} title="Nothing to analyse yet" body="Write at least 30 words and Bandit will score all four IELTS criteria in real time." />
+        <EmptyState icon={Wand2} title="Nothing to analyse yet" body="Write at least 30 words and IELTS HH will score all four IELTS criteria in real time." />
       </Card>
     );
   }

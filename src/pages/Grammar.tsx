@@ -33,7 +33,7 @@ export default function Grammar() {
 
       {totalIssues === 0 ? (
         <EmptyState icon={Target} title="No grammar issues detected yet"
-          body="Write an essay in Writing Lab or take a test — Bandit flags recurring grammar errors and builds targeted practice here."
+          body="Write an essay in Writing Lab or take a test — IELTS HH flags recurring grammar errors and builds targeted practice here."
           action={<Button size="sm" onClick={() => addTask({ title: 'Grammar practice', skill: 'writing', minutes: 20 })}>Add a grammar session</Button>} />
       ) : (
         <>

@@ -48,7 +48,7 @@ export default function Planner() {
   return (
     <div className="space-y-6">
       <PageHeader icon={CalendarRange} title="AI Study Planner"
-        subtitle="Bandit weights every session by your gap to the target band, then adapts the plan when you fall behind." />
+        subtitle="IELTS HH weights every session by your gap to the target band, then adapts the plan when you fall behind." />
 
       {message && <div role="status" className="rounded-xl bg-brand-soft px-4 py-3 text-sm text-brand">{message}</div>}
 
